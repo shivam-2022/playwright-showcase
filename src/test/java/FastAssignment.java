@@ -2,10 +2,11 @@ import com.microsoft.playwright.*;
 import com.microsoft.playwright.junit.UsePlaywright;
 import org.junit.jupiter.api.Test;
 @UsePlaywright
-public class FastAssignment {
+public class FastAssignment extends BaseSetup{
     @Test
-    public void test(Page page) {
-        page.navigate("https://www.fast.com");
+    public void test() {
+        setUp("https://www.fast.com");
+//        page.navigate("https://www.fast.com");
         Locator speedResult = page.locator("#speed-value");
         Locator speedUnit =page.locator("#speed-units");
         do {

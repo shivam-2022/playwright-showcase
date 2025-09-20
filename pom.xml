@@ -26,6 +26,13 @@
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.13.4</version>
         </dependency>
+        <!-- JUnit Platform Engine -->
+        <dependency>
+            <groupId>org.junit.platform</groupId>
+            <artifactId>junit-platform-engine</artifactId>
+            <version>1.10.0</version>
+            <scope>test</scope>
+        </dependency>
     </dependencies>
 
 </project>
