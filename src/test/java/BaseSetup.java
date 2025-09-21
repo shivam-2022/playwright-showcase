@@ -31,6 +31,10 @@ public class BaseSetup {
             page.navigate(Url);
         }
     }
+    public void setUp() {
+        browserContext  = browser.newContext();
+            page = browserContext.newPage();
+    }
 
     @AfterAll
     static void teardown() {
